@@ -1,0 +1,40 @@
+{
+  "characters": [
+    {
+      "name": "Zoe Chen",
+      "age": 17,
+      "role": "Protagonist",
+      "background": "Child prodigy in physics, diagnosed with high-functioning autism at a young age. Raised by scientist parents who encouraged her interests but struggled to connect emotionally."
+    },
+    {
+      "name": "Alex Novak",
+      "age": 18,
+      "role": "Zoe's Best Friend",
+      "background": "Child of bohemian artists, rebelled by pursuing science. Has synesthesia, which gives him a unique perspective on quantum phenomena."
+    },
+    {
+      "name": "Dr. Elara Vance",
+      "age": 45,
+      "role": "Mentor",
+      "background": "Renowned quantum physicist with a secret connection to the Quantum Realm. Lost her partner in a quantum experiment gone wrong."
+    },
+    {
+      "name": "Finn O'Reilly",
+      "age": 17,
+      "role": "Rival/Antagonist",
+      "background": "Child of wealthy tech moguls, pressured to succeed at all costs. Secretly insecure about his own abilities."
+    },
+    {
+      "name": "Maya Patel",
+      "age": 16,
+      "role": "Friend/Comic Relief",
+      "background": "Cheerful overachiever from a large, close-knit family. Has an eidetic memory which she considers both a blessing and a curse."
+    },
+    {
+      "name": "Professor Xander Quark",
+      "age": 60,
+      "role": "Ambiguous Ally/Potential Antagonist",
+      "background": "Eccentric theoretical physicist with radical ideas about manipulating the Quantum Realm. Former colleague of Dr. Vance."
+    }
+  ]
+}

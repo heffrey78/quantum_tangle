@@ -1,0 +1,68 @@
+[
+    {
+        "step": 0,
+        "name": "Meta Instructions",
+        "prompt": "You are a creative story telling and novel writing agent. Follow the instructions below. In the absence of input, use what you know to generate an input file and save it to the proper location. Think deeply. Solve problems. Ask sparing questions. Generate a brief in ./output/brief.md.",
+        "output": "./output/brief.md"
+    },
+    {
+      "step": 1,
+      "name": "Genre and Theme Selection",
+      "prompt": "Analyze the writing samples provided in './input/writing_samples.txt'. If './input/writing_samples.txt' does not exist, create examples of writing and save them to './input/writing_samples.txt'.Based on these samples and your understanding of literary genres, suggest a genre and central theme for our novel. Store your decision in './output/genre_theme.json'.",
+      "output": "./output/genre_theme.json"
+    },
+    {
+      "step": 2,
+      "name": "World Building",
+      "prompt": "Using the genre and theme from './output/genre_theme.json', create a detailed world for our novel. Include geographical, historical, and cultural elements. Generate a map of the world and store it as an SVG file in './output/world_map.svg'. Create a comprehensive world guide and save it in './output/world_guide.md'.",
+      "output": ["./output/world_map.svg", "./output/world_guide.md"]
+    },
+    {
+      "step": 3,
+      "name": "Character Creation",
+      "prompt": "Create 5-7 main characters for our novel, ensuring they fit within the world described in './output/world_guide.md'. For each character, provide a detailed background, personality traits, goals, and conflicts. Generate a character relationship diagram using Mermaid and store it in './output/character_relationships.mmd'. Save the character profiles in './output/characters.json'.",
+      "output": ["./output/character_relationships.mmd", "./output/characters.json"]
+    },
+    {
+      "step": 4,
+      "name": "Plot Outline",
+      "prompt": "Develop a main plot and 2-3 subplots for our novel, incorporating the characters from './output/characters.json' and the world from './output/world_guide.md'. Create a plot structure diagram using Mermaid and save it as './output/plot_structure.mmd'. Write a detailed plot outline and store it in './output/plot_outline.md'.",
+      "output": ["./output/plot_structure.mmd", "./output/plot_outline.md"]
+    },
+    {
+      "step": 5,
+      "name": "Chapter Outline",
+      "prompt": "Based on the plot outline in './output/plot_outline.md', create a chapter-by-chapter outline for the novel. Each chapter summary should include key events, character developments, and how it advances the main plot or subplots. Save this outline as './output/chapter_outline.md'.",
+      "output": "./output/chapter_outline.md"
+    },
+    {
+      "step": 6,
+      "name": "Writing Style Analysis",
+      "prompt": "Analyze the writing samples in './input/writing_samples.txt' for style elements such as tone, voice, pacing, and narrative perspective. Summarize these findings and suggest a cohesive writing style for our novel. Save this analysis and recommendation as './output/writing_style.md'. If './input/writing_samples.txt' does not exist, create examples of writing and save them to './input/writing_samples.txt'.",
+      "output": "./output/writing_style.md"
+    },
+    {
+      "step": 7,
+      "name": "Cannon and Consistency Check",
+      "prompt": "Review all generated content in the './output/' directory. Create a 'canon' document that outlines the key facts, rules, and relationships of the world, characters, and plot. Check for any inconsistencies across all documents and resolve them. Save this canon document as './output/canon.md' and list any changes made to resolve inconsistencies.",
+      "output": "./output/canon.md"
+    },
+    {
+      "step": 8,
+      "name": "Chapter Writing",
+      "prompt": "Write Chapter {chapter_number} of the novel. Consult './output/chapter_outline.md' for the chapter's key events, './output/characters.json' for character information, './output/world_guide.md' for world details, './output/writing_style.md' for stylistic guidance, and './output/canon.md' to ensure consistency. Advance the plot and develop characters according to the outline. Save the chapter as './output/chapters/chapter_{chapter_number}.md'.",
+      "output": "./output/chapters/chapter_{chapter_number}.md"
+    },
+    {
+      "step": 9,
+      "name": "Chapter Review and Refinement",
+      "prompt": "Review the recently written chapter in './output/chapters/chapter_{chapter_number}.md'. Analyze it for pacing, character development, plot advancement, and adherence to the established style and canon. Suggest any necessary revisions or enhancements. If changes are made, update the file and note the revisions in './output/revision_notes.md'.",
+      "output": ["./output/chapters/chapter_{chapter_number}.md", "./output/revision_notes.md"]
+    },
+    {
+      "step": 10,
+      "name": "Story Progression Tracking",
+      "prompt": "After completing Chapter {chapter_number}, update the plot progression diagram in './output/plot_structure.mmd' to reflect the current state of the main plot and subplots. Also, update the character relationship diagram in './output/character_relationships.mmd' if any significant changes occurred in this chapter. Ensure these diagrams remain consistent with the content in './output/canon.md'.",
+      "output": ["./output/plot_structure.mmd", "./output/character_relationships.mmd"]
+    }
+  ]
